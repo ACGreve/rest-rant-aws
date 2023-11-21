@@ -1,22 +1,34 @@
-# Project REST-Rant
-REST-Rant is an app where users can review restaurants.
 
-### Setup
-First, you'll need a Postgres database to connect to. Follow instructions here to setup the database and save credentials for the next step.
+# REST Rant AWS
 
-Next create a `.env` file inside of `backend`. It will need to contain the following environment variables (change the values for the database to match what you defined in the previous step)
-```
+## Description
+
+REST Rant AWS is a platform built to manage and deploy RESTful APIs on AWS efficiently. This application simplifies the process of creating, configuring, and deploying REST APIs using AWS services. It provides a user-friendly interface to manage API endpoints, configure AWS resources, and monitor API usage.
+
+This project is of a website to create/update/delete favorite or not so favorite restaurants as well as create/update/delete reviews/
+
+## Technologies
+
+- Node.js
+- Express.js
+- Postres
+- AWS Beanstock
+- AWS API Gateway
+
+## Demo
+
+The depolment of this project has been deleted and therefore and demo is not feasible.
+
+## Technical Information
+
 PORT=5000
-DB_USERNAME=rest_rant_user
-DB_PASSWORD=password
+DB_USERNAME=postgres
+DB_PASSWORD=postgres
 DB_DATABASE=rest_rant
-```
 
-Next `cd` into `backend` and run `npm install` to install dependencies for the API.
-
-Next, `cd` into `frontend`, and run `npm install` to install dependencies for the React app.
-
-Finally, in separate terminals, run `npm start` in each folder so that the API and React app are running at the same time.
+- Follow the Airbnb JavaScript Style Guide for consistency.
+- Use ES6+ syntax for JavaScript code.
+- Comment code sections effectively.
 
 ### API (http://localhost:5000)
 | Method | Path                                 | Purpose                                   |
@@ -30,13 +42,20 @@ Finally, in separate terminals, run `npm start` in each folder so that the API a
 | POST   | /places/:placeId/comments            | Create a comment about a particular place |
 | DELETE | /places/:placeId/comments/:commentId | Delete a comment about a particular place |
 
+#### Frontend
 
-### App (http://localhost:3000)
-| Path                  | Component                 | Purpose                                                                         |
-| --------------------- | ------------------------- | ------------------------------------------------------------------------------- |
-| /                     | `Home.js`                 | Home page                                                                       |
-| /sign-up              | `users/SignUpForm.js`     | Form for creating a new user                                                    |
-| /places               | `places/PlaceIndex.js`    | List of places                                                                  |
-| /places/new           | `places/NewPlaceForm.js`  | Form for creating a new place                                                   |
-| /places/:placeId      | `places/PlaceDetails.js`  | Details of a place, including it's comments, and a form to create a new comment |
-| /places/:placeId/edit | `places/EditPlaceForm.js` | Form for editing a place                                                        |
+1. Clone the repository: `git clone https://github.com/ACGreve/rest-rant-aws.git`
+2. Change directory to the frontend folder: `cd frontend`
+3. Install dependencies: `npm install`
+4. Start the application: `npm start`
+
+#### Backend
+
+1. Clone the repository: `git clone https://github.com/ACGreve/rest-rant-aws.git`
+2. Change directory to the backend folder: `cd backend`
+3. Install dependencies: `npm install`
+4. Start the server: `npm start`
+
+## Issues
+
+- CSS visablilty unsuccessful upon deplyment
